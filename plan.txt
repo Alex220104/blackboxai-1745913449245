@@ -1,0 +1,46 @@
+E-commerce Website for Electronics - Project Plan
+
+1. Project Structure:
+   /project-root
+     /css
+       - styles.css
+     /js
+       - scripts.js
+     /php
+       - db.php (database connection)
+       - login.php (login processing)
+       - logout.php (logout processing)
+       - register.php (user registration)
+       - products.php (fetch/display products)
+       - purchase.php (handle purchase)
+     /images
+       - product images
+     index.html (homepage)
+     category.html (product category page template)
+     login.html (login form)
+     register.html (registration form)
+     product_detail.html (product details page)
+
+2. Features:
+   - Homepage with featured products and navigation
+   - Product category pages: laptops, phones, accessories, electronic components
+   - User registration and login system (PHP sessions)
+   - Product listing and detail pages
+   - Shopping cart and purchase functionality (basic)
+   - Responsive design using CSS
+
+3. Database Schema (MySQL for Vertrigo):
+   - users: id, username, password_hash, email, created_at
+   - products: id, name, category, description, price, image_path, stock_quantity
+   - orders: id, user_id, order_date, total_amount
+   - order_items: id, order_id, product_id, quantity, price
+
+4. Technologies:
+   - Frontend: HTML, CSS, JavaScript
+   - Backend: PHP
+   - Database: MySQL (Vertrigo)
+
+Next Steps:
+- Create database and tables in MySQL
+- Develop PHP backend scripts for user auth and product management
+- Build frontend pages with Tailwind CSS for styling and Font Awesome for icons
